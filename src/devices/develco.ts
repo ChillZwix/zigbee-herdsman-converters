@@ -1142,7 +1142,6 @@ export const definitions: DefinitionWithExtend[] = [
                 await endpoint.read("ssIasZone", ["zoneStatus"]);
             } catch {
                 // Device may be sleeping, will be read on next wake
-            }
         },
     },
     {
@@ -1154,6 +1153,5 @@ export const definitions: DefinitionWithExtend[] = [
         whiteLabel: [{vendor: "Futurehome", model: "FH9047"}],
         ota: true,
         extend: [m.onOff({"powerOnBehavior":false}), m.electricityMeter()],
-        },
     },
 ];
