@@ -1098,12 +1098,11 @@ export const definitions: DefinitionWithExtend[] = [
     {
         zigbeeModel: ['Co019'],
         model: 'Co019',
-        vendor: "Develco",
-        vendor: '_TZ3000_eyzb8yg3',
+        vendor: 'Develco',
         description: 'Smart Relay 16A',
-        whiteLabel: [{vendor: "Futurehome", model: "FH9047"}],
+        whiteLabel: [{vendor: 'Futurehome', model: 'FH9047'}],
         ota: true,
-        extend: [m.onOff({"powerOnBehavior":false}), m.electricityMeter()],
+        extend: [m.onOff({"powerOnBehavior":false}), m.electricityMeter()]
     },
     {
         zigbeeModel: ["REXZB-111"],
